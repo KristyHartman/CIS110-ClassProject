@@ -1,10 +1,19 @@
-def animal_name(animal):
-    return input(f"What would you like to name your {animal}? ")
-
-def favorite_city():
-    return input("What's your favorite city? ")
-
-def explore_field(name, animal, animal_name):
+    # Saying Hello and Introduce chatbot!
+    print("Hello!")
+    print("I am Kristy, your chatbot.")
+    # Instructions
+    print("When I ask you a question, please answer and press Enter afterwards.")
+    
+    # Asking the user name and 5 story questions
+    name = input("\nWhat is your name:  ")
+    animal = input("What main character would you like to have, a dog or a cat?  ")
+    animal_kind =input("What is the {animal}, a boy or girl?  ")
+    pet_name = input("What would you like to name your {animal}:  ")
+    restaurent = input("What is your favorite restaurent?  ")
+    city = input("What is your favorite city?  ")
+    
+    #exploring the stream and forest
+    explore_field(name, animal, animal_name):
     print(f"\n{animal_name} was outside in the backyard playing when they came across a hole in the fence.")
     print(f"Curiosity got the better of {animal_name}, and they started digging. Before {animal_name} knew it, they were across the fence into the big wide world of adventure.")
     print(f"After walking out into the wild open field, {animal_name} ran right into a big black fluffy cat named Whiskers.")
@@ -101,20 +110,10 @@ def main():
             print("Please choose either 'dog' or 'cat'.")
             animal = input("What main character would you like to have, a dog or a cat? ").lower()
         
-        # User names the animal
-        pet_name = animal_name(animal)
+     
+      
         
-        # User's favorite city
-        city = favorite_city()
-        
-        # Short story begins
-        explore_field(name, animal, pet_name)
-        add_challenge(pet_name)
-        big_city(city, pet_name)
-        
-        # Creating another story
-        if not create_another_story():
-            break
+     
     print("Thanks for playing!")
 
 if __name__ == "__main__":
