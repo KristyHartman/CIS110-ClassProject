@@ -1,6 +1,7 @@
 # Saying Hello and Introduce chatbot!
 print("Hello!")
 print("I am Katie, your chatbot.")
+print("Together we are going to creae a story together.")
 # Instructions
 print("When I ask you a question, please answer and press Enter afterwards.")
 
